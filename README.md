@@ -22,18 +22,26 @@
 # kafka
 
 ## 启动kafka
-     .\bin\windows\kafka-server-start.bat .\config\server.properties
+kafka 安装目录
+```shell script
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+```
      
 ## 创建topic
+>.\bin\windows\ 目录下
+```shell script
 kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test001
+```
 
 ## 打开生产者
+```shell script
 kafka-console-producer.bat --broker-list localhost:9092 --topic test
+```
 
 ## 打开消费者
+```shell script
 kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test001 --from-beginning
-
-
+```
 
 # mysql 建表
 ```mysql
