@@ -56,6 +56,11 @@ PRIMARY KEY ( ID )
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 ```
+
+## 查看表数据
+```mysql
+select count(*) from log_info;
+```
 [kafka,zookeeper安装](https://www.cnblogs.com/lnice/p/9668750.html)
 
 [flink清洗数据](https://blog.csdn.net/Gavin_chun/article/details/85132425?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-19.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-19.nonecase)

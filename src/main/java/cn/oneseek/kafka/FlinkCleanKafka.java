@@ -35,10 +35,7 @@ public class FlinkCleanKafka {
             public Tuple5<String, String, String, String, String> map(String value) throws Exception {
                 String[] data = value.split("\\\\t");
                 String CourseID = null;
-
-                System.out.println(data[2]);
                 String url = data[2].split("\\ ")[1];
-                System.out.println(url);
                 if (url.startsWith("/class")) {
                     String CourseHTML = url.split("\\/")[2];
                     CourseID = CourseHTML.substring(0, CourseHTML.lastIndexOf("."));
